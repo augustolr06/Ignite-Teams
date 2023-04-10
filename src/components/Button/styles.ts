@@ -1,10 +1,11 @@
+import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native'
 
 interface ContainerProps {
   variant: 'primary' | 'secondary'
 }
 
-export const Container = styled.TouchableOpacity<ContainerProps>`
+export const Container = styled(TouchableOpacity)<ContainerProps>`
   min-width: 56px;
   min-height: 56px;
   border-radius: 6px;
